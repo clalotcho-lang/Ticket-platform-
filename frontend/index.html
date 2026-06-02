@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎟️ TicketFR - Plateforme de Billetterie</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">🎟️ TicketFR</div>
+            <nav>
+                <a href="#events">Événements</a>
+                <a href="#contact">Contact</a>
+                <button class="btn-login">Se Connecter</button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Réservez vos Tickets pour les Plus Grands Événements</h1>
+            <p>🏉 Coupe du Monde de Rugby 2027 • ⚽ Matchs de Football • 🎵 Festivals • 🎭 Événements Culturels</p>
+            <input type="text" placeholder="Rechercher un événement..." class="search-input" id="searchInput">
+        </div>
+    </section>
+
+    <section class="featured-events">
+        <div class="container">
+            <h2>🌟 Événements à la Une</h2>
+            <div class="events-grid" id="featured-list"></div>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="container">
+            <h2>Parcourir par Catégorie</h2>
+            <div class="category-grid">
+                <div class="category-card" onclick="filterByCategory('Rugby')">
+                    <span>🏉</span>
+                    <p>Rugby</p>
+                </div>
+                <div class="category-card" onclick="filterByCategory('Football')">
+                    <span>⚽</span>
+                    <p>Football</p>
+                </div>
+                <div class="category-card" onclick="filterByCategory('Musique')">
+                    <span>🎵</span>
+                    <p>Musique</p>
+                </div>
+                <div class="category-card" onclick="filterByCategory('Culture')">
+                    <span>🎭</span>
+                    <p>Culture</p>
+                </div>
+                <div class="category-card" onclick="filterByCategory('Sports')">
+                    <span>🏀</span>
+                    <p>Sports</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="all-events" id="events">
+        <div class="container">
+            <h2>Tous les Événements</h2>
+            <div class="events-grid" id="events-list"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Plateforme de Billetterie France. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
